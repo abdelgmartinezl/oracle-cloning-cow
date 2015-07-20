@@ -37,7 +37,7 @@ homedir=`echo ${basefs/c/u}`
 clear
 echo "ACP - ENVIRONMENT REFRESH"
 echo "-------------------------"
-echo "User: $USER"
+echo "User: `whoami`"
 echo "Environment: $envname"
 echo "Date: `date`"
 echo
@@ -200,5 +200,5 @@ echo "Oracle Home added to inventory......[OK]"
 end=`date +%s`
 runtime=$((end-start))
 echo
-echo "Time elapsed: $runtime"
+echo "Time elapsed: $runtime seconds"
 echo "Done!"
