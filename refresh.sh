@@ -18,7 +18,7 @@ echo -n "Enter the base filesystem: "
 read basefs
 
 # Set the old environment name (lowercase)
-envnamelc=`echo $envname | awk '{print tolower($0)}'`
+envnamelc=`echo $envname | perl -ne 'print lc'`
 
 # Set the new environment name (uppercase)
 if [ ${#envname} -lt 5 ] ; then
@@ -29,7 +29,7 @@ fi
 newname=`echo $newname | awk '{print toupper($0)}'`
 
 # Set the new environment name (lowercase)
-newnamelc=`echo $newname | awk '{print tolower($0)}'`
+newnamelc=`echo $newname | perl -ne 'print lc'`
 
 # Set the new base directory name
 homedir=`echo ${basefs/c/u}`
