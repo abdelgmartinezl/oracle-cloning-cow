@@ -85,7 +85,7 @@ if [ "$RETVAL" = "Alive" ]; then
     echo "Database is up and running........[OK]"
 else
     echo "ERROR: There was an issue starting the database instance. Please review the logs."
-fi  
+fi
 
 
 # REVIEW : Validate if logfile switch was done
